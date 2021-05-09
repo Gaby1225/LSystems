@@ -11,10 +11,10 @@ package lsystems;
  */
 public class Desenho
 {
-    public static void desenhaSVG(int angulo, String end)
+    public static void desenhaSVG(double angulo, String end)
     {
         String Tratamento = end;
-        int angle = angulo;
+        double angle = angulo;
         StringBuilder sb = new StringBuilder();
     }
 }
