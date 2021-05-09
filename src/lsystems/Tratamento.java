@@ -53,6 +53,7 @@ public class Tratamento
             analizar = sb.toString();
         }
         System.out.println(sb.toString());
+        Desenho.desenhaSVG(angulo, sb.toString());
 
     }
     

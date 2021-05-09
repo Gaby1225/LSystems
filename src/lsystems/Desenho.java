@@ -13,8 +13,6 @@ import java.util.HashMap;
  */
 public class Desenho
 {
-    private String saida;
-    private double angulo;
     
     public static void desenhaSVG(double angulo, String saida)
     {
@@ -29,9 +27,10 @@ public class Desenho
         return null;    
     }
     
-     public double angulo() {
+     public double angulo() 
+     {
         return angulo;
-    }
+     }
 
     
     
