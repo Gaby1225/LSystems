@@ -5,16 +5,33 @@
  */
 package lsystems;
 
+import java.util.HashMap;
+
 /**
  *
  * @author Administrador
  */
 public class Desenho
 {
-    public static void desenhaSVG(double angulo, String end)
+    
+    public static void desenhaSVG(double angulo, String saida)
     {
-        String Tratamento = end;
+        String Tratamento = saida;
         double angle = angulo;
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder();    
+                   
     }
+    
+    public String saida()
+    {
+        return null;    
+    }
+    
+     public double angulo() 
+     {
+        return angulo;
+     }
+
+    
+    
 }
