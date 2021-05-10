@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package lsystems;
+import java.io.IOException;
 import java.util.HashMap;
 
 /**
@@ -12,7 +13,7 @@ import java.util.HashMap;
  */
 public class Tratamento
 {    
-    public static void recebeDados(double angulo, int iteracoes, String axioma, HashMap<String, String> regras, int maiorRegra){
+    public static void recebeDados(double angulo, int iteracoes, String axioma, HashMap<String, String> regras, int maiorRegra) throws  IOException{
         String analizar = axioma;
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < iteracoes; i++){
@@ -52,6 +53,8 @@ public class Tratamento
             }
             analizar = sb.toString();
         }
+        if (iteracoes == 0)
+            sb.append(axioma);
         System.out.println(sb.toString());
         Desenho.desenhaSVG(angulo, sb.toString());
 
